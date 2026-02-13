@@ -23,6 +23,9 @@ class _MyProfileState extends State<MyProfile> {
           children: [
             Text(
               isClicked ? "Button Clicked ✅" : name,
+
+              //hi  Bangladesh ami jakir . tromra kemon acho . Jakir is a fucked boy. I hate myself .I hate myself . ami nijeke ghrina kori ami nijeke ghrina kori jakir ke grina kori ami ami jakir ke ghrina kori ami nijeke ghrina kori i hak=t e  sddami suniyar son  .. ami duniyar sobaike ghrina kori.
+
               style: const TextStyle(fontSize: 20),
             ),
             const SizedBox(height: 16),

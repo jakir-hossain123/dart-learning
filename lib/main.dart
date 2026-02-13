@@ -1,19 +1,22 @@
+import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
+import 'package:untitled2/dart_classes.dart';
+import 'package:untitled2/home_page.dart';
 
-
-class Person {
-  String name;
-  int age;
-
-  Person(this.name , this.age);
-  void speak() {
-
-    print('my name is $name and my age is $age');
-  }
+void main (){
+  runApp(
+    ChangeNotifierProvider(create: (_)=>UserModel(),
+    child: MyApp(),
+    )
+  );
 }
-  void main (){
- Person p1=Person('jakir', 21);
- p1.speak();
+class MyApp extends StatelessWidget {
+  const MyApp({super.key});
 
- Person p2 = Person('Mehedi', 26);
- p2.speak();
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      home: HomePage(),
+    );
+  }
 }
